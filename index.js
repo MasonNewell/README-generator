@@ -57,21 +57,21 @@ inquirer
   .then((data) => {
     //  README setup
     const readMeSetup = `# ${data.title}
-        ## Description: 
-        ${data.description}
-        ## Table of Contents:
-        ${data.table_of_contents}
-        ## Installation 
-        ${data.installation}
-        ## Usage Information:
-        ${data.usage_information}
-        ## Contribution Guidelines:
-        ${data.contribution_guidelines}
-        ## test_instructions:
-        ${data.test_instructions}
-        ### License: 
-        ${data.license}
-        # git_username: ${data.git_username}`;
+## Description: 
+${data.description}
+## Table of Contents:
+${data.table_of_contents}
+## Installation 
+${data.installation}
+## Usage Information:
+${data.usage_information}
+## Contribution Guidelines:
+${data.contribution_guidelines}
+## test_instructions:
+${data.test_instructions}
+### License: 
+${data.license}
+# git_username: ${data.git_username}`;
     // write to file
     fs.writeFile("tester.md", readMeSetup, (err) =>
       err ? console.log(err) : console.log("Success!")
