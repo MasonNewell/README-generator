@@ -1,7 +1,5 @@
-// TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
-// const { listenerCount } = require("process");
 inquirer
   .prompt([
     {
@@ -43,7 +41,17 @@ inquirer
       type: "list",
       name: "license",
       message: "Choose a license: ",
-      choices: ["MIT", "GPL", "Apache", "GNU", "N/A"],
+      choices: [
+        {
+          name: "MIT",
+          value:
+            "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
+        },
+        "GPL",
+        "Apache",
+        "GNU",
+        "N/A",
+      ],
     },
     {
       name: "git_username",
@@ -72,8 +80,9 @@ ${data.test_instructions}
 ### License: 
 ${data.license}
 # git_username: ${data.git_username}`;
+
     // write to file
-    fs.writeFile("tester.md", readMeSetup, (err) =>
+    fs.writeFile("README.md", readMeSetup, (err) =>
       err ? console.log(err) : console.log("Success!")
     );
   });
