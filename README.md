@@ -1,30 +1,44 @@
 # Demo
 
-## Description: 
+## Description:
+
 This is a demo for the description section of the README file.
+
 ## Table of Contents:
-1) [License](##-license)
 
-2) [Installation Instructions](##-installation-instructions)
+1. [License](#-license)
 
-3) [Usage Information](##-usage-information)
+2. [Installation Instructions](#-installation-instructions)
 
-4) [Contribution Guidelines](##-contribution-guidelines)
+3. [Usage Information](#-usage-information)
 
-5) [Test Instructions](##-test-instructions)
+4. [Contribution Guidelines](#-contribution-guidelines)
 
-6) [Questions](###-questions)
+5. [Test Instructions](#-test-instructions)
 
-## License: 
+6. [Questions](#-questions)
+
+## License
+
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-## Installation Instructions 
+
+## Installation Instructions
+
 You will just need to download inquirer to run this program.
-## Usage Information:
+
+## Usage Information
+
 Open-source usage
-## Contribution Guidelines:
+
+## Contribution Guidelines
+
 masonnewell
-## Test Instructions:
+
+## Test Instructions
+
 run inquirer --dev for testing
-### Questions: 
+
+### Questions
+
 Github: https://github.com/MasonNewell
 Email: mason.newell13@gmail.com
