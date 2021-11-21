@@ -24,8 +24,10 @@ open-source usage
 ## Contribution Guidelines:
 MasonNewell
 ## Test Instructions:
-run inquirer --dev to test this readme generator
+use inquirer for testing
 ### Questions: 
-Github: https://github.com/masonnewell
+Github: https://github.com/MasonNewell
 
 Email: mason.newell13@gmail.com
+#### Demo
+![demo](/image/demo.gif)
