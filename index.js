@@ -98,8 +98,10 @@ ${data.contribution_guidelines}
 ## Test Instructions:
 ${data.test_instructions}
 ### Questions: 
-Github: https://github.com/${data.git_username}
-Email: ${data.email}`;
+Github: https://github.com/${data.git_username}\n
+Email: ${data.email}
+#### Demo
+![demo](/image/demo.gif)`;
 
     // write to file
     fs.writeFile("README.md", readMeSetup, (err) =>
