@@ -8,7 +8,7 @@ This is a demo for the description section of the README file.
 
 1. [License](#license)
 
-2. [Installation Instructions](#installation instructions)
+2. [Installation Instructions](#installation-instructions)
 
 3. [Usage Information](#usage-information)
 
@@ -16,7 +16,7 @@ This is a demo for the description section of the README file.
 
 5. [Test Instructions](#test-instructions)
 
-6. [Questions](#-questions)
+6. [Questions](#questions)
 
 ## License
 
