@@ -13,11 +13,6 @@ inquirer
       default: "default_description",
     },
     {
-      name: "table_of_contents",
-      message: "Enter table of contents:  ",
-      default: "table_of_contents:",
-    },
-    {
       name: "installation",
       message: "Enter installation requirements",
       default: "installation_requirements:",
@@ -43,14 +38,25 @@ inquirer
       message: "Choose a license: ",
       choices: [
         {
+          name: "Apache",
+          value:
+            "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
+        },
+        {
+          name: "Boost",
+          value:
+            "[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)",
+        },
+        {
+          name: "GNU",
+          value:
+            "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)",
+        },
+        {
           name: "MIT",
           value:
-            "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
+            "[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/licenses/MIT)",
         },
-        "GPL",
-        "Apache",
-        "GNU",
-        "N/A",
       ],
     },
     {
@@ -65,21 +71,35 @@ inquirer
   .then((data) => {
     //  README setup
     const readMeSetup = `# ${data.title}
+
 ## Description: 
 ${data.description}
 ## Table of Contents:
-${data.table_of_contents}
-## Installation 
+1) [License](##-license)
+
+2) [Installation Instructions](##-installation-instructions)
+
+3) [Usage Information](##-usage-information)
+
+4) [Contribution Guidelines](##-contribution-guidelines)
+
+5) [Test Instructions](##-test-instructions)
+
+6) [Questions](###-questions)
+
+## License: 
+${data.license}
+## Installation Instructions 
 ${data.installation}
 ## Usage Information:
 ${data.usage_information}
 ## Contribution Guidelines:
 ${data.contribution_guidelines}
-## test_instructions:
+## Test Instructions:
 ${data.test_instructions}
-### License: 
-${data.license}
-# git_username: ${data.git_username}`;
+### Questions: 
+Github: https://github.com/${data.git_username}
+Email: ${data.email}`;
 
     // write to file
     fs.writeFile("README.md", readMeSetup, (err) =>
